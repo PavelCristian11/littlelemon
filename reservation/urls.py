@@ -6,11 +6,9 @@ from rest_framework.authtoken.views import obtain_auth_token
 # router.register(r'users', views.BookingViewSet)
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.index, name='home'),
     path('menu/', views.MenuItemview.as_view()),
     path('menu/<int:pk>', views.SingleMenuItemView.as_view()),
     path('message/', views.msg),
     path('api-token-auth/', obtain_auth_token),
-    path('auth/', include('djoser.urls')),
-    path('auth/', include('djoser.urls.authtoken')),
 ]
