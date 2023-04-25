@@ -24,5 +24,5 @@ router.register(r'tables', views.BookingViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('reservation.urls')),
-        path('restaurant/booking/', include(router.urls)),
+    path('restaurant/booking/', include(router.urls)),
 ]
