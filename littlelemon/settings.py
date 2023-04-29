@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'reservation',
+    'restaurant',
     'rest_framework',
     'rest_framework.authtoken',
     'djoser',
@@ -80,11 +80,9 @@ WSGI_APPLICATION = 'littlelemon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'capstone_littlelemon',
-        'HOST' : '127.0.0.1',
-        'PORT' : '3306',
-        'USER' : 'root',
-        'PASSWORD' : 'root'
+        'OPTIONS': {
+            'read_default_file': 'D:\Personal\Projects\Coding\.env\mysql.cnf',
+        },
     }
 }
 

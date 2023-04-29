@@ -1,6 +1,13 @@
-# Little lemon capstone
+# Little lemon website
 
-Simple overview of use/purpose.
+This project is based on the Meta Back-End Developer Professional Certificate Course 8(https://www.coursera.org/learn/back-end-developer-capstone?specialization=meta-back-end-developer). 
+
+Table of Contents
+=================
+
+1. Installation.
+2. Usage notes.
+3. Python deployment manual for future use.
 
 ## Getting Started
 
