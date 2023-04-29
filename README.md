@@ -5,22 +5,46 @@ This project is based on the Meta Back-End Developer Professional Certificate Co
 Table of Contents
 =================
 
-1. Installation.
-2. Usage notes.
-3. Python deployment manual for future use.
+1. Installation
+2. About
+3. Features
+4. Future developments
 
-## Getting Started
 
-* Menu API is under the following path:
+## 1. Installation
+Virtualenv was used to manage all the dependencies into a virtual environment
+Installing virtualenv:
+```
+pip install virtualenv
+```
+After cloning the project, use the following command to install all the dependencies:
+```
+pip install -r requirements.txt
+```
+Next step is to update the settings.py DATABASE section accordingly to your database preferences(MySQL, POSTGRESQL or SQLITE)
+
+## 2. About
+
+In this project, a website was developed for the owners of Little Lemon restaurant. The site consists of 5 pages:
+1. Home -> main page;
+2. About -> restaurant description;
+3. Menu -> the menu available;
+4. Book -> restaurant booking table;
+5. Reservations -> all bookings.
+
+## 3. Features
+
+1. ModelForm -> Booking;
+2. Model -> Menu;
+3. APIs:
 ```
 menu/
 menu/<int:pk>
+bookings/
 ```
-* Booking APIs can be found under:
-```
-restaurant/booking/tables
-```
-* Tests.py file can be found under the reservation app:
-```
-reservation/tests.py
-```
+4. Tests -> model and view tests;
+
+## 4. Future developments
+
+1. Split the Menu model into 2 models: Course(Starter, Main and Dessert) and Dish. Update the Menu page and the menu API endpoint to reflect this change;
+2. Reservation page to be available only to the owner and staff of the restaurant;
